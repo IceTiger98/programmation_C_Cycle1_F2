@@ -1,84 +1,62 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define TAILLE 100
+
+
+//const int TAILLE=100
+
 
 int main()
 {
-    /* commentaire paragraphe*/
-    // commentaire ligne
 
-    //unsigned : non signé ex: unsigned short sn_entier
-    //integer
-    short sn_entier;
-    int n_entier;
-    long l_entier;
-
-    printf("Taille en octet du short : %d\n", sizeof(sn_entier));
-    printf("Taille en octet de entier : %d\n",sizeof(n_entier));
-    printf("Taille en octet du long : %d\n",sizeof(l_entier));
-
-    //reel
-    //unsigned : non signé ex: unsigned float flt_entier
-    float flt_reel;
-    double dbl_reel;
-    long double ldbl_reel;
-
-    printf("Taille en octet du float : %d\n", sizeof(flt_reel));
-    printf("Taille en octet de double : %d\n",sizeof(dbl_reel));
-    printf("Taille en octet du long double : %d\n",sizeof(ldbl_reel));
-
-    //caractère
-    char c_car;
-    printf("Taille en octet du caractere : %d\n", sizeof(c_car));
+    //Exemple
 
 
-    //opérateurs
+    int n_a=0, n_b=0;
+    char c_car='a';
+    float flt_f=0.0;
 
-
-    //== (égalité)
-    //<= (plus petit ou égal)
-    //>= (plus grand ou égal)
-    //!= (pas =)
-    //+
-    //-
-    /* '/' division */
-    //% (modulo)
-    //= (assignation)
-    //, (la séquence (ordre) ex: instruction 1,instruction 2)
-    //& (&&)
-    //| (||)
-    //! (not)
-    //++
-    //+= (res+=a revient à res=res+a)
-    //-= (res-=a revient à res=res-a)
-    //'/='(res/=a revient à res=res/a)
-    //*=(res*=a revient à res=res*a)
-
-    //printf("%d\n",(n_a>n_b));
-    // voir dans cplusplus.com/references/cstdio
+    int n_t=TAILLE;
 
 
 
-    int n_a = 255;
-    int n_b = 0;
 
-    printf ("val de n_a: %d\n", n_a);
-    printf ("val de n_b: %d\n", n_b);
 
-    //ecrire
-    printf ("val de n_a et n_b: %d\n", n_a, n_b);
-    printf ("val de n_a et n_b: %x\n", n_a, n_b);
+    printf("Bonjour\n");
+    printf("Programme exemple\n");
 
-    printf ("Saisir un entier dans n_a\n");
-    //lire
-    scanf("%d",&n_a);
-    printf ("Saisir un entier dans n_b\n");
-    scanf("%d",&n_b);
+    //affichage formate
+    printf("n_a : %d\n", n_a);
+    printf("n_b : %d\n", n_b);
+    printf("c_car : %c\n", c_car);
+    printf("flt_f : %f\n", flt_f);
 
-    printf ("val de n_a et n_b: %d\n", n_a, n_b);
+    putchar(c_car);//affichage non formate
 
+    /*scanf("\nEntrez un entier : \n");
+    scanf("%d", &n_a);
+    scanf("Entrez un entier : \n");
+    scanf("%d", &n_b);*/
+
+    printf("\n Entrez deux entiers : \n");
+    scanf("%d%d", &n_a,&n_b);
+
+    printf("n_a : %d\n", n_a);
+    printf("n_b : %d\n", n_b);
+
+    fflush (stdin);//vider le tampon stdin (buffer du buildage stdin)
+    printf("\nEntrez un caractere : \n");
+    scanf("%c", &c_car);
+
+    printf("c_car : %c\n", c_car);
+
+    fflush (stdin);
+    printf("\nEntrez un caractere : \n");
+    c_car=getchar();// Saisie non formatee MACRO
+
+    printf("c_car : %c\n", c_car);
 
 
 
     return 0;
-
 }
