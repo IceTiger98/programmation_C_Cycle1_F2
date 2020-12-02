@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1606929495 source:c:\users\quentin\documents\test1\bataille_navale\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bateau.h"
+	"plateau.h"
+	"action.h"
+
+1606928469 c:\users\quentin\documents\test1\bataille_navale\headers\bateau.h
+
+1606928469 c:\users\quentin\documents\test1\bataille_navale\bateau.h
+
+1606929495 c:\users\quentin\documents\test1\bataille_navale\plateau.h
+
+1606929495 c:\users\quentin\documents\test1\bataille_navale\action.h
+
