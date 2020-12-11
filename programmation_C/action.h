@@ -18,7 +18,7 @@ void vise(int tire[2], int bateau[][2], int essaie)
             colonne=0,
             rang;
 
-        //count how many bateau there is ligne/colonne
+  
         for(rang=0 ; rang < 3 ; rang++){
             if(bateau[rang][0]==tire[0])
                 ligne++;
